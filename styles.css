@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: blue;
+}
+
+header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    background-color: gray;
+}
+
+img {
+    width: 25px;
+    color: white;
+    fill: white;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(298deg) brightness(108%) contrast(101%);    
+}
